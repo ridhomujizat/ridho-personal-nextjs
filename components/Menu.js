@@ -289,6 +289,7 @@ const Menu = () => {
               href="https://drive.google.com/file/d/1WMLhjQFKWurI0GYZq78wDsQPICaz8uDl/view?usp=sharing"
               className="resume-link"
               target="_blank"
+              rel="noreferrer"
             >
               Resume
             </a>
