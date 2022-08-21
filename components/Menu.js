@@ -230,7 +230,6 @@ const Menu = () => {
   };
 
   useEffect(() => {
-    console.log("test");
     if (menuOpen) {
       document.body.classList.add("blur");
     } else {

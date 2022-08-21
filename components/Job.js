@@ -96,6 +96,7 @@ const Jobs = () => {
                     aria-hidden={activeTabId !== i}
                     hidden={activeTabId !== i}
                     color={color}
+                    key={i}
                   >
                     <img src={img} alt={company} height="75px" width="auto" />
                     <h3>
