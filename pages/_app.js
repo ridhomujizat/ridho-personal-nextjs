@@ -1,14 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { GlobalStyle, theme } from "styles";
 import { ThemeProvider } from "styled-components";
 import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const [isMounted, setIsMoundted] = useState(false)
+
+  useEffect(() => {
+    setIsMoundted(true)
+  }, [])
+  
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Component {...pageProps} />
+     {isMounted && <Component {...pageProps} />}
     </ThemeProvider>
   );
 }
